@@ -1256,7 +1256,7 @@
                             <div class="col-lg-12">
                                 <div class="form-group">
                                     <label for="contact-email">Email</label>
-                                    <input class="form-control " id="contact-email" name="contact-email" type="email" value="mdaman9939@gmail.com" read>
+                                    <input class="form-control " id="contact-email" name="contact-email" type="email"  read>
                                 </div>
                             </div>
                             <div class="col-lg-12">
@@ -1286,35 +1286,47 @@
     </div>
 </div>
 <!-- End Contact section -->
+<!-- Email sender start  -->
 <script>
-    document.getElementById('contact-form').addEventListener('submit', (e) => {
-        e.preventDefault();
-        const name = document.getElementById('contact-name').value;
-        const phone = document.getElementById('contact-phone').value;
-        const email = document.getElementById('contact-email').value;
-        const subject = document.getElementById('subject').value;
-        const message = document.getElementById('contact-message').value;
-        const messageDiv = document.getElementById('message');
+document.getElementById("contact-form").addEventListener("submit", async function(e) {
+    e.preventDefault(); // Stop form from refreshing the page
 
-        // Construct mailto link
-        const body = `Name: ${encodeURIComponent(name)}\nPhone: ${encodeURIComponent(phone)}\nEmail: ${encodeURIComponent(email)}\n\nMessage:\n${encodeURIComponent(message)}`;
-        const mailtoLink = `mailto:mdaman9939@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
-        
-        try {
-            window.location.href = mailtoLink;
-            messageDiv.textContent = 'Aapka email client khul raha hai...';
-            messageDiv.classList.add('text-green-600');
-            setTimeout(() => {
-                document.getElementById('contact-form').reset();
-                messageDiv.textContent = '';
-                messageDiv.classList.remove('text-green-600');
-            }, 2000);
-        } catch (error) {
-            messageDiv.textContent = 'Email client kholne mein error';
-            messageDiv.classList.add('text-red-600');
+    // Collect form data
+    const formData = {
+        name: document.getElementById("contact-name").value,
+        phone: document.getElementById("contact-phone").value,
+        email: document.getElementById("contact-email").value,
+        subject: document.getElementById("subject").value,
+        message: document.getElementById("contact-message").value
+    };
+
+    try {
+        // Call your backend API
+        const response = await fetch("https://portfolio-2025-backend-2y77.onrender.com/send-email", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(formData)
+        });
+
+        const result = await response.json();
+
+        if (response.ok) {
+            document.getElementById("message").innerText = "✅ Email sent successfully!";
+            document.getElementById("contact-form").reset(); // Clear form
+        } else {
+            document.getElementById("message").innerText = "❌ Failed to send: " + (result.message || "Unknown error");
         }
-    });
+    } catch (error) {
+        console.error("Error:", error);
+        document.getElementById("message").innerText = "❌ Error connecting to server.";
+    }
+});
 </script>
+
+<!-- Email sender End  -->
+
 
         <!-- Modal Portfolio Body area Start -->
         <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-hidden="true">
