@@ -2,78 +2,97 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://mdaman.tech/</loc>
+        <lastmod>2026-06-25</lastmod>
         <priority>1.0</priority>
     </url>
     <url>
         <loc>https://mdaman.tech/about.htm</loc>
+        <lastmod>2026-06-25</lastmod>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://mdaman.tech/services.htm</loc>
+        <lastmod>2026-06-25</lastmod>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://mdaman.tech/projects.htm</loc>
+        <lastmod>2026-06-25</lastmod>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://mdaman.tech/resume.htm</loc>
+        <lastmod>2026-06-25</lastmod>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://mdaman.tech/contact.htm</loc>
+        <lastmod>2026-06-25</lastmod>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://mdaman.tech/blog.htm</loc>
+        <lastmod>2026-06-25</lastmod>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://mdaman.tech/blog-details.htm</loc>
+        <lastmod>2026-06-25</lastmod>
         <priority>0.6</priority>
     </url>
     <url>
         <loc>https://mdaman.tech/blog-rag.htm</loc>
+        <lastmod>2026-06-25</lastmod>
         <priority>0.6</priority>
     </url>
     <url>
         <loc>https://mdaman.tech/blog-fastapi-vs-node.htm</loc>
+        <lastmod>2026-06-25</lastmod>
         <priority>0.6</priority>
     </url>
     <url>
         <loc>https://mdaman.tech/blog-yolo.htm</loc>
+        <lastmod>2026-06-25</lastmod>
         <priority>0.6</priority>
     </url>
     <url>
         <loc>https://mdaman.tech/blog-cicd.htm</loc>
+        <lastmod>2026-06-25</lastmod>
         <priority>0.6</priority>
     </url>
     <url>
         <loc>https://mdaman.tech/blog-erp.htm</loc>
+        <lastmod>2026-06-25</lastmod>
         <priority>0.6</priority>
     </url>
     <url>
         <loc>https://mdaman.tech/project-erp.htm</loc>
+        <lastmod>2026-06-25</lastmod>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://mdaman.tech/project-crm.htm</loc>
+        <lastmod>2026-06-25</lastmod>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://mdaman.tech/project-hotel.htm</loc>
+        <lastmod>2026-06-25</lastmod>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://mdaman.tech/project-safety.htm</loc>
+        <lastmod>2026-06-25</lastmod>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://mdaman.tech/project-hospital.htm</loc>
+        <lastmod>2026-06-25</lastmod>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://mdaman.tech/project-arfah.htm</loc>
+        <lastmod>2026-06-25</lastmod>
         <priority>0.7</priority>
     </url>
 </urlset>
