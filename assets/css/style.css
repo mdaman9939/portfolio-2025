@@ -14604,6 +14604,7 @@ body.white-version {
   color: var(--color-white) !important; }
 
 /*# sourceMappingURL=../maps/style.css.map */
+<<<<<<< HEAD
 
 /* Light-mode header/footer backdrop so logo mix-blend-mode works at the top (non-sticky) */
 .white-version .rn-header { background-color: #ECF0F3; }
@@ -14619,3 +14620,5 @@ body.white-version {
   .faq-item .faq-answer { padding: 0 18px 18px !important; }
   .tech-tile { padding: 18px 10px !important; }
 }
+=======
+>>>>>>> 45a9df10f39ea394f71ef44f1dccb37751839bc5
