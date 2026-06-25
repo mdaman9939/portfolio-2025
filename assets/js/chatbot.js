@@ -13,7 +13,7 @@
     { keys: ["hi", "hello", "hey", "namaste", "salam", "hii", "heyy", "good morning", "good evening"],
       answer: "Hi there! 👋 I'm Md Aman's assistant. Ask me anything about him — his skills, projects, experience, education, or how to hire him!" },
 
-    { keys: ["who", "about", "yourself", "kaun", "introduce", "tell me about", "who is md aman", "about md aman"],
+    { keys: ["who", "about", "yourself", "kaun", "introduce", "tell me about", "who is md aman", "about md aman", "md aman", "your name", "ur name"],
       answer: "Md Aman is a <b>Full Stack Developer & AI Engineer</b> based in Bhopal, India. He builds scalable web apps and AI/ML solutions across MERN, Python FastAPI, PHP and modern AI frameworks — from ERP systems to LLM and computer-vision projects. 🚀" },
 
     { keys: ["role", "what do you do", "profession", "designation", "job title", "kaam", "kya karte"],
@@ -115,14 +115,16 @@
   '.mab-head .mab-dot{width:7px;height:7px;border-radius:50%;background:#3bff8f;display:inline-block;flex:0 0 7px;}' +
   '.mab-close{flex:0 0 28px;background:rgba(255,255,255,.18);border:none;color:#fff;cursor:pointer;font-size:18px;line-height:1;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;padding:0;}' +
   '.mab-close:hover{background:rgba(255,255,255,.32);}' +
-  '.mab-body{flex:1;overflow-y:auto;padding:16px;background:#f4f6f9;}' +
+  '.mab-body{flex:1;overflow-y:auto;padding:16px;background:#f4f6f9;scrollbar-width:none;-ms-overflow-style:none;}' +
+  '.mab-body::-webkit-scrollbar{display:none;}' +
   '.mab-msg{max-width:84%;padding:10px 13px;border-radius:14px;margin-bottom:10px;font-size:13.5px;line-height:1.5;word-wrap:break-word;}' +
   '.mab-bot{background:#fff;color:#2a2d33;border:1px solid #e7ebf0;border-bottom-left-radius:4px;}' +
   '.mab-user{background:var(--color-primary,#ff014f);color:#fff;margin-left:auto;border-bottom-right-radius:4px;}' +
   '.mab-msg a{color:var(--color-primary,#ff014f);font-weight:600;text-decoration:underline;}' +
   '.mab-user a{color:#fff;}' +
-  '.mab-quick{display:flex;flex-wrap:wrap;gap:8px;padding:2px 16px 12px;background:#f4f6f9;}' +
-  '.mab-chip{display:inline-block;width:auto;flex:0 0 auto;background:#fff;border:1px solid var(--color-primary,#ff014f);color:var(--color-primary,#ff014f);border-radius:18px;padding:7px 13px;font-size:12.5px;line-height:1;cursor:pointer;font-family:inherit;transition:.15s;}' +
+  '.mab-quick{display:flex;flex-wrap:nowrap;overflow-x:auto;gap:8px;padding:2px 16px 12px;background:#f4f6f9;scrollbar-width:none;-ms-overflow-style:none;}' +
+  '.mab-quick::-webkit-scrollbar{display:none;}' +
+  '.mab-chip{display:inline-block;width:auto;flex:0 0 auto;white-space:nowrap;background:#fff;border:1px solid var(--color-primary,#ff014f);color:var(--color-primary,#ff014f);border-radius:18px;padding:7px 13px;font-size:12.5px;line-height:1;cursor:pointer;font-family:inherit;transition:.15s;}' +
   '.mab-chip:hover{background:var(--color-primary,#ff014f);color:#fff;}' +
   '.mab-foot{display:flex;gap:8px;padding:10px 12px;border-top:1px solid #e7ebf0;background:#fff;}' +
   '.mab-foot input{flex:1;border:1px solid #d8dee6;border-radius:22px;padding:10px 14px;font-size:13.5px;outline:none;color:#2a2d33;}' +
