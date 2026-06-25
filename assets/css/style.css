@@ -14604,7 +14604,6 @@ body.white-version {
   color: var(--color-white) !important; }
 
 /*# sourceMappingURL=../maps/style.css.map */
-<<<<<<< HEAD
 
 /* Light-mode header/footer backdrop so logo mix-blend-mode works at the top (non-sticky) */
 .white-version .rn-header { background-color: #ECF0F3; }
@@ -14615,10 +14614,8 @@ body.white-version {
   a[aria-label="Chat on WhatsApp"], #themeToggle { width: 46px !important; height: 46px !important; right: 16px !important; }
   a[aria-label="Chat on WhatsApp"] { bottom: 16px !important; }
   #themeToggle { bottom: 72px !important; }
-  .backto-top > div { left: 16px !important; right: auto !important; bottom: 16px !important; width: 42px !important; height: 42px !important; line-height: 38px !important; }
+  .backto-top > div { left: 16px !important; right: auto !important; bottom: 74px !important; width: 42px !important; height: 42px !important; line-height: 38px !important; }
   .faq-item summary { padding: 18px 18px !important; font-size: 16px !important; }
   .faq-item .faq-answer { padding: 0 18px 18px !important; }
   .tech-tile { padding: 18px 10px !important; }
 }
-=======
->>>>>>> 45a9df10f39ea394f71ef44f1dccb37751839bc5
